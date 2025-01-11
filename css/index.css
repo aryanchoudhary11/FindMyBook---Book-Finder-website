@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    box-shadow: 0 10px 12px rgba(205, 220, 200, 0.7);
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+  }
+
+  .logo-container {
+    width: 140px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+  .nav-items{
+    width: 500px;
+  }
+  .nav-items #li-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-items a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+    width: 90px;
+    text-align: center;
+  }
+  .nav-items a:hover{
+    transform: scale(1.2);
+  }
+
+  main{
+    margin-top: 50px;
+
+  }
+  .cover-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .tagline-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tagline-container h1{
+    font-size: 45px;
+    font-family: 'Permanent Marker';
+  }
+  .tagline-container p{
+    font-size: 20px;
+    /* font-family: 'Tangerine'; */
+    font-family: 'Edu AU VIC WA NT Pre';
+  }
+  .tagline-container button{
+    margin-top: 50px;
+    font-size: 18px;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: transform 0.3s ease;
+  }
+  .tagline-container button span{
+    overflow-y: hidden;
+  }
+  .tagline-container button:hover{
+    transform: scale(0.9);
+  }
