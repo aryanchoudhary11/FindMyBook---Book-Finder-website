@@ -101,7 +101,7 @@
   .genres-container{
     margin: 20px 40px;
   }
-  .genres-heading h2{
+  .genres-heading h2, .popular-container h2{
     font-family: 'Roboto';
   }
   .genres-collection{
@@ -185,3 +185,44 @@
     background-color: rgb(249, 9, 9);
   }
 
+  .popular-container{
+    margin: 40px;
+  }
+  .popular-collection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3rem;
+    margin-top: 20px;
+  }
+  .popular-box{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+  }
+  .popular-box img{
+    height: 200px;
+    padding: 10px;
+  }
+  .popular-box h3{
+    font-family: 'Signika Negative';
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .popular-box button{
+    background-color: rgb(207, 7, 7);
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 90px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .popular-box button:hover{
+    background-color: rgb(249, 9, 9);
+  }
