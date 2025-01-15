@@ -214,7 +214,7 @@
   }
   .popular-box button{
     background-color: rgb(207, 7, 7);
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     border: none;
     border-radius: 10px;
@@ -224,5 +224,102 @@
     font-size: 13px;
   }
   .popular-box button:hover{
+    background-color: rgb(249, 9, 9);
+  }
+
+  .footer-content{
+    padding: 40px;
+  }
+  .footer-content-1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-content-1 a{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+  }
+  .footer-content-1 a:hover{
+    color: rgb(249, 9, 9);
+  }
+  .footer-content-2 p{
+    font-size: 18px;
+  }
+  .foter-content-2 #copyright{
+    font-size: 12px;
+  }
+  .footer-content-2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(31, 31, 31);
+  }
+  .form-container{
+    display: flex;
+    justify-content: center;
+  }
+  #form{
+    width: 500px;
+  }
+  .form-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-heading h1{
+    font-family: 'Roboto';
+    font-size: 35px;
+  }
+  .form-heading h3{
+    font-family: 'Signika Negative';
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .name-container{
+    display: flex;
+    margin-top: 40px;
+  }
+  .first-name, .last-name {
+    border: 2px solid #d5d5da;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .first-name input, .last-name input, .email-container input, .phone-container input{
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 5px;
+    outline: none;
+  }
+  .first-name span, .email-container span, .phone-container span{
+    color: #7d7d7d;
+    padding: 5px;
+  }
+  .last-name{
+    margin-left: 8px;
+  }
+  .email-container, .phone-container{
+    width: 496px;
+    border: 2px solid #d5d5da;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #send-btn{
+    width: 496px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(207, 7, 7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #send-btn:hover{
     background-color: rgb(249, 9, 9);
   }
