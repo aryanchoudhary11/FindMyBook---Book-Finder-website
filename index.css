@@ -79,7 +79,7 @@
   .tagline-container button{
     margin-top: 50px;
     font-size: 18px;
-    background-color: black;
+    background-color:  rgb(207, 7, 7);
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -97,6 +97,59 @@
   }
   .tagline-container button:hover{
     transform: scale(0.9);
+  }
+  .search-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden; 
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .search-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .search-popup.show {
+    display: block; 
+    opacity: 1; 
+    visibility: visible;
+  }
+  .search-popup-content h2{
+    font-size: 30px;
+    font-family: 'Roboto';
+  }
+  .search-popup-content input{
+    width: 95%;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .search-popup-content button{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
   }
   .genres-container{
     margin: 20px 40px;

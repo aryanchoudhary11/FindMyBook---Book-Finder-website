@@ -25,7 +25,7 @@
       <div class="nav-bar">
         <div class="nav-items">
           <ul id="li-items">
-            <li><a href="#">Home</a></li>
+            <li><a href="#cover">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Account</a></li>
           </ul>
@@ -34,14 +34,23 @@
     </header>
 
     <main>
-      <div class="cover-container">
+      <div class="cover-container" id="cover">
         <div class="tagline-container">
           <h1>Your Ultimate Book Discovery Tool!</h1>
           <p>Discover, Locate, and Fall in Love with Books Again.</p>
-          <button>
+          <button id="search-title-btn">
             Search for Books Now
             <span class="material-symbols-outlined"> search </span>
           </button>
+          <div id="search-popup" class="search-popup">
+            <div class="search-popup-content">
+              <span class="close">&times;</span>
+
+              <h2>Search your book title</h2>
+              <input type="text" placeholder="Enter title of your book" />
+              <button>Search</button>
+            </div>
+          </div>
         </div>
         <div class="cover-image">
           <img src="img/cover.png" alt="cover image" />
@@ -196,7 +205,7 @@
             <a href="#">Browse Books</a>
             <a href="#">Categories</a>
             <a href="#">Top Picks</a>
-            <a href="#">Contact Us</a>
+            <a href="#">Cookies Policy</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Condition</a>
             <a href="#">Copyright Notice</a>
@@ -244,4 +253,5 @@
       </div>
     </footer>
   </body>
+  <script src="search-popup.js"></script>
 </html>
