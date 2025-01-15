@@ -380,3 +380,37 @@
   #send-btn:hover{
     background-color: rgb(249, 9, 9);
   }
+
+
+
+
+  .about-cover-container{
+    background-image: url(img/about\ us\ background.jpg);
+    color: white;
+    height: 60vh;
+  }
+  .about-cover-content{
+    position: relative;
+    top: 150px;
+    left: 100px;
+  }
+  .about-cover-content h1{
+    font-size: 45px;
+    font-family: 'Roboto';
+  }
+  .about-cover-content p{
+    font-family: 'Edu AU VIC WA NT Pre';
+  }
+  .about-cover-content button{
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(207, 7, 7);
+    color: white;
+    cursor: pointer;
+  }
+  .about-cover-content button:hover{
+    background-color: rgb(249, 9, 9);
+  }
