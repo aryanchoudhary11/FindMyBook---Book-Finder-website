@@ -26,8 +26,17 @@
         <div class="nav-items">
           <ul id="li-items">
             <li><a href="#cover">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li class="dropdown">
+              <a href="#" id="account-btn">Account</a>
+              <ul class="dropdown-menu" id="account-menu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="orders.html">Your Orders</a></li>
+                <li><a href="wishlist.html">Your Wishlist</a></li>
+                <li><a href="books.html">Your Books</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -254,4 +263,5 @@
     </footer>
   </body>
   <script src="search-popup.js"></script>
+  <script src="account.js"></script>
 </html>
