@@ -443,11 +443,26 @@
   }
   .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 3rem;
+    padding: 40px 60px;
+    justify-content: space-around;
   }
-  .card-1{
+  .card{
     border: 1px solid black;
-    width: 200px;
+    width: 225px;
     height: 300px;
+  }
+  .card h3{
+    padding: 20px;
+    font-family: 'Signika Negative';
+    font-size: 16px;
+    text-align: center;
+  }
+  .card p{
+    font-family: 'Edu AU VIC WA NT Pre';
+    font-size: 13px;
+    padding: 20px;
+    font-weight: 500;
+    text-align: justify;
   }
