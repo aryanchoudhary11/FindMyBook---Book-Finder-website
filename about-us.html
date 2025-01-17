@@ -26,8 +26,45 @@
         <div class="nav-items">
           <ul id="li-items">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="form-container">
+              <form id="form">
+                <div class="form-heading">
+                  <h1>Contact Us</h1>
+                  <h3>We will get back to you asap!</h3>
+                </div>
+
+                <div class="name-container">
+                  <div class="first-name">
+                    <span class="material-symbols-outlined"> person </span>
+                    <input type="text" placeholder="First name" />
+                  </div>
+                  <div class="last-name">
+                    <input type="text" placeholder="Last name" />
+                  </div>
+                </div>
+                <div class="email-container">
+                  <span class="material-symbols-outlined"> mail </span>
+                  <input type="text" placeholder="Email" />
+                </div>
+                <div class="phone-container">
+                  <span class="material-symbols-outlined"> call </span>
+                  <input type="text" placeholder="Phone" />
+                </div>
+                <button id="send-btn">SEND</button>
+              </form>
+            </div>
+            <li class="dropdown">
+              <a href="#" id="account-btn">Account</a>
+              <ul class="dropdown-menu" id="account-menu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="orders.html">Your Orders</a></li>
+                <li><a href="wishlist.html">Your Wishlist</a></li>
+                <li><a href="books.html">Your Books</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -119,57 +156,38 @@
     <footer>
       <div class="footer-container">
         <div class="footer-content">
+          <div class="social-media">
+            <h1>FindMyBook</h1>
+            <div class="icons-container">
+              <img src="img/instagram.png" alt="instagram" />
+              <img src="img/twitter.png" alt="twitter" />
+              <img src="img/facebook.png" alt="facebook" />
+            </div>
+          </div>
           <div class="footer-content-1">
-            <a href="#">Home</a>
-            <a href="#">Browse Books</a>
-            <a href="#">Categories</a>
-            <a href="#">Top Picks</a>
-            <a href="#">Cookies Policy</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Condition</a>
-            <a href="#">Copyright Notice</a>
-            <a href="#">FAQ</a>
+            <div id="important-links">
+              <a href="#">Home</a>
+              <a href="#">Browse Books</a>
+              <a href="#">Categories</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Condition</a>
+            </div>
+            <div class="copyright">
+              <span id="copyright">© All rights reserved</span>
+            </div>
           </div>
-          <div class="form-container">
-            <form id="form">
-              <div class="form-heading">
-                <h1>Contact Us</h1>
-                <h3>We will get back to you asap!</h3>
-              </div>
-
-              <div class="name-container">
-                <div class="first-name">
-                  <span class="material-symbols-outlined"> person </span>
-                  <input type="text" placeholder="First name" />
-                </div>
-                <div class="last-name">
-                  <input type="text" placeholder="Last name" />
-                </div>
-              </div>
-              <div class="email-container">
-                <span class="material-symbols-outlined"> mail </span>
-                <input type="text" placeholder="Email" />
-              </div>
-              <div class="phone-container">
-                <span class="material-symbols-outlined"> call </span>
-                <input type="text" placeholder="Phone" />
-              </div>
-              <button id="send-btn">SEND</button>
-            </form>
-          </div>
-          <div class="footer-content-2">
-            <p href="#">
-              <span class="material-symbols-outlined"> mail </span
-              >achoudhary.aryan@gmail.com
-            </p>
-            <span id="copyright">© All rights reserved</span>
-            <p href="#">
-              <span class="material-symbols-outlined"> call </span
-              >+91-8457154825
-            </p>
+          <div class="subscribe">
+            <h2>Subscribe to FindMyBook</h2>
+            <div class="subscribe-input">
+              <input type="text" placeholder="Enter your Email" />
+              <button>Submit</button>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="search-popup.js"></script>
+  <script src="account.js"></script>
+  <script src="contact.js"></script>
 </html>
