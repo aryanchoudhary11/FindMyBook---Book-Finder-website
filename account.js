@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Toggle menu on click
     accountBtn.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
+      event.preventDefault();
       accountMenu.style.display =
         accountMenu.style.display === "block" ? "none" : "block";
     });

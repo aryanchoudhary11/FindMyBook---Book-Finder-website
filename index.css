@@ -330,11 +330,25 @@
 
   .footer-content{
     padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    justify-content: space-between;
   }
   .footer-content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content-1 .copyright{
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  .footer-content-1 #important-links{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    width: 620px;
   }
   .footer-content-1 a{
     font-size: 18px;
@@ -344,48 +358,32 @@
   .footer-content-1 a:hover{
     color: rgb(249, 9, 9);
   }
-  .footer-content-2 p{
-    font-size: 18px;
-    display: flex;
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
     align-items: center;
-    
+    z-index: 10000; 
   }
-  .foter-content-2 #copyright{
-    font-size: 12px;
-  }
-  .footer-content-2{
-    margin-top: 20px;
+
+  
+  .popup-overlay.active {
     display: flex;
-    justify-content: space-between;
-    color: rgb(31, 31, 31);
   }
-  /* Popup overlay styles */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: none; /* Hidden by default */
-  justify-content: center;
-  align-items: center;
-  z-index: 10000; /* Ensure it overlays everything */
-}
 
-/* Show the popup when active */
-.popup-overlay.active {
-  display: flex;
-}
-
-/* Centered form inside the popup */
-.form-container {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin: 0; /* Remove default margin */
-}
+  
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0;
+  }
 
   #form{
     width: 500px;
@@ -449,6 +447,43 @@
     cursor: pointer;
   }
   #send-btn:hover{
+    background-color: rgb(249, 9, 9);
+  }
+
+  .social-media h1{
+    font-family: 'Roboto';
+    font-size: 25px;
+  }
+  .icons-container{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .icons-container img{
+    height: 25px;
+  }
+  .subscribe h2{
+    font-family: 'Roboto';
+    font-size: 25px;
+  }
+  .subscribe-input input{
+    height: 10px;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    
+  }
+  .subscribe-input button{
+    width: 80px;
+    height: 34px;
+    cursor: pointer;
+    background-color: rgb(207, 7, 7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .subscribe-input button:hover{
     background-color: rgb(249, 9, 9);
   }
 
