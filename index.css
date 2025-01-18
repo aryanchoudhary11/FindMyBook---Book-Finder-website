@@ -625,3 +625,37 @@
   .genre-book a:hover{
     color: rgb(249, 9, 9);
   }
+
+
+  /*Search by Author*/
+
+  .author-book{
+    height: 450px;
+    width: 314px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+  }
+  .author-book img{
+    height: 260px;
+    padding: 10px;
+  }
+  .author-book h3{
+    font-family: 'Signika Negative';
+    font-size: 17px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .author-book #author-name{
+    margin-top: 15px;
+    color: rgb(17, 180, 17);
+    text-align: center;
+  }
+  .author-book #published-year{
+    margin-top: 22px;
+    color: rgb(207, 7, 7);
+    
+  }
+  
