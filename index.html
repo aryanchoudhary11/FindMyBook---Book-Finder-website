@@ -99,36 +99,37 @@
         </div>
         <div class="genres-collection">
           <div class="genres-box">
-            <img src="img/fiction cover.jpg" alt="fiction" />
+            <img src="img/fiction cover.jpg" alt="Fiction" />
             <h3>Fiction</h3>
-            <a href="#"
-              >Browse books<span class="material-symbols-outlined">
-                chevron_right
-              </span>
+            <a class="browse-books" onclick="fetchBooks('fiction')">
+              Browse books<span class="material-symbols-outlined"
+                >chevron_right</span
+              >
             </a>
           </div>
           <div class="genres-box">
-            <img src="img/non-fiction.jpg" alt="non-fiction" />
+            <img src="img/non-fiction.jpg" alt="Non-Fiction" />
             <h3>Non-Fiction</h3>
-            <a href="#"
-              >Browse books<span class="material-symbols-outlined">
-                chevron_right
-              </span></a
-            >
+            <a class="browse-books" onclick="fetchBooks('non-fiction')">
+              Browse books<span class="material-symbols-outlined"
+                >chevron_right</span
+              >
+            </a>
           </div>
+
           <div class="genres-box">
-            <img src="img/children's.jpg" alt="children's" />
-            <h3>Children's</h3>
-            <a href="#"
-              >Browse books<span class="material-symbols-outlined">
-                chevron_right
-              </span></a
-            >
+            <img src="img/children's.jpg" alt="Children's" />
+            <h3 id="genre-type">Children's</h3>
+            <a onclick="fetchBooks('children')" class="browse-books">
+              Browse books<span class="material-symbols-outlined"
+                >chevron_right</span
+              >
+            </a>
           </div>
           <div class="genres-box">
             <img src="img/horror.jpg" alt="Horror" />
-            <h3>Horror</h3>
-            <a href="#"
+            <h3 id="genre-type">Horror</h3>
+            <a onclick="fetchBooks('horror')" class="browse-books"
               >Browse books<span class="material-symbols-outlined">
                 chevron_right
               </span></a
@@ -136,8 +137,8 @@
           </div>
           <div class="genres-box">
             <img src="img/adventure.jpg" alt="Adventure" />
-            <h3>Adventure</h3>
-            <a href="#"
+            <h3 id="genre-type">Adventure</h3>
+            <a onclick="fetchBooks('adventure')" class="browse-books"
               >Browse books<span class="material-symbols-outlined">
                 chevron_right
               </span></a
@@ -145,8 +146,8 @@
           </div>
           <div class="genres-box">
             <img src="img/poetry.jpg" alt="Poetry" />
-            <h3>Poetry</h3>
-            <a href="#"
+            <h3 id="genre-type">Poetry</h3>
+            <a onclick="fetchBooks('poetry')" class="browse-books"
               >Browse books<span class="material-symbols-outlined">
                 chevron_right
               </span></a
@@ -154,8 +155,8 @@
           </div>
           <div class="genres-box">
             <img src="img/short stories.jpg" alt="Short Stories" />
-            <h3>Short Stories</h3>
-            <a href="#"
+            <h3 id="genre-type">Short Stories</h3>
+            <a onclick="fetchBooks('short-stories')" class="browse-books"
               >Browse books<span class="material-symbols-outlined">
                 chevron_right
               </span></a
@@ -163,14 +164,16 @@
           </div>
           <div class="genres-box">
             <img src="img/Philosophical.jpg" alt="Philosophical" />
-            <h3>Philosophical</h3>
-            <a href="#"
+            <h3 id="genre-type">Philosophical</h3>
+            <a onclick="fetchBooks('philosophical')" class="browse-books"
               >Browse books<span class="material-symbols-outlined">
                 chevron_right
               </span></a
             >
           </div>
         </div>
+
+        <div id="book-results"></div>
       </div>
 
       <div class="author-container">
@@ -265,11 +268,11 @@
             </div>
           </div>
         </div>
-        <div class="footer-content-2"></div>
       </div>
     </footer>
   </body>
   <script src="search-popup.js"></script>
   <script src="account.js"></script>
   <script src="contact.js"></script>
+  <script src="genre.js"></script>
 </html>
