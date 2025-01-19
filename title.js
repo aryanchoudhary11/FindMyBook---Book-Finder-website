@@ -1,27 +1,27 @@
-// Utility function to fetch and display books
-async function fetchBooksauthor(authorName) {
+
+async function fetchBooksByTitle(titleName) {
     const resultsDiv = document.getElementById("book-results");
     resultsDiv.innerHTML = ""; 
 
     try {
         const response = await fetch(
-            `https://openlibrary.org/search.json?author=${encodeURIComponent(authorName)}`
+            `https://openlibrary.org/search.json?title=${encodeURIComponent(titleName)}`
         );
         const data = await response.json();
 
         if (data.docs.length === 0) {
-            resultsDiv.textContent = "No books found for this author.";
+            resultsDiv.textContent = "No books found with this title.";
             return;
         }
 
         const books = data.docs.map((book) => {
-            // Use cover_i to generate the image URL or fall back to a default image
+            
             const coverImage = book.cover_i
                 ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
-                : "img/default-cover.jpg"; // Replace with the path to your default cover image
+                : "img/default-cover.jpg"; 
 
             return `
-                <div class="author-book">
+                <div class="title-book">
                     <img src="${coverImage}" alt="Cover of ${book.title}" class="book-cover" />
                     <h3>${book.title}</h3>
                     <p id="author-name"><strong>Author:</strong> ${book.author_name ? book.author_name.join(", ") : "Unknown"}</p>
@@ -39,26 +39,26 @@ async function fetchBooksauthor(authorName) {
 
 // Logic for index.html
 if (window.location.pathname.endsWith("index.html")) {
-    document.getElementById("search-button").addEventListener("click", () => {
-        const authorName = document.getElementById("author-input").value.trim();
-        if (authorName === "") {
-            alert("Please enter an author name.");
+    document.getElementById("title-search").addEventListener("click", () => {
+        const titleName = document.getElementById("title-input").value.trim();
+        if (titleName === "") {
+            alert("Please enter a book title.");
             return;
         }
 
-        // Redirect to the books page with the author name as a URL parameter
-        window.location.href = `author.html?author=${encodeURIComponent(authorName)}`;
+        
+        window.location.href = `title.html?title=${encodeURIComponent(titleName)}`;
     });
 }
 
-// Logic for books.html
-if (window.location.pathname.endsWith("author.html")) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const authorName = urlParams.get("author");
 
-    if (authorName) {
-        fetchBooksauthor(authorName);
+if (window.location.pathname.endsWith("title.html")) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const titleName = urlParams.get("title");
+
+    if (titleName) {
+        fetchBooksByTitle(titleName);
     } else {
-        document.getElementById("book-results").textContent = "No author name provided.";
+        document.getElementById("book-results").textContent = "No book title provided.";
     }
 }
