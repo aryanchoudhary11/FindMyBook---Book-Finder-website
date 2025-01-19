@@ -26,6 +26,7 @@ async function fetchBooksauthor(authorName) {
                     <h3>${book.title}</h3>
                     <p id="author-name"><strong>Author:</strong> ${book.author_name ? book.author_name.join(", ") : "Unknown"}</p>
                     <p id="published-year"><strong>First Published:</strong> ${book.first_publish_year || "Unknown"}</p>
+                    <a href="#">See Details <span class="material-symbols-outlined">chevron_right</span></a>
                 </div>
             `;
         });
