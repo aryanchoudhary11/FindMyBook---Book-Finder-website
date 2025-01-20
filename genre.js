@@ -16,14 +16,13 @@ async function fetchBooks(genre) {
 }
 
 function openResultsPage(books) {
-  // Store book data in localStorage
+  
   localStorage.setItem('bookResults', JSON.stringify(books));
 
-  // Open a new page
+  
   window.open('genre.html', '_blank');
 }
 
-// Code for the new results.html page
 function displayBooksOnNewPage() {
   const books = JSON.parse(localStorage.getItem('bookResults'));
 
