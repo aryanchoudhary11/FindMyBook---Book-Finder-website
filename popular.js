@@ -3,7 +3,7 @@ const details = [
         title: 'Don Quixote',
         originalTitle: 'El ingenioso hidalgo don Quijote de la Mancha',
         cover: "img/Don Quixote.jpg",
-        price: 'Rs. 1199',
+        price: 'Rs.1199',
         author: 'Miguel de Cervantes',
         genre: 'Novel (Spanish Literature)',
         intro: `Don Quixote has become so entranced by reading chivalric romances that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray—he tilts at windmills, imagining them to be giants—Sancho acquires cunning and a certain sagacity. Sane madman and wise fool, they roam the world together, and together they have haunted readers' imaginations for nearly four hundred years.
@@ -17,7 +17,7 @@ const details = [
         title: 'A Tale of Two Cities',
         originalTitle: 'A Tale of Two Cities',
         cover: "img/A Tale of Two Cities.jpg",
-        price: 'Rs. 799',
+        price: 'Rs.799',
         author: 'Charles Dickens',
         genre: 'Historical Fiction',
         intro: `A Tale of Two Cities is Charles Dickens’s great historical novel, set against the violent upheaval of the French Revolution. The most famous and perhaps the most popular of his works, it compresses an event of immense complexity to the scale of a family history, with a cast of characters that includes a bloodthirsty ogress and an antihero as believably flawed as any in modern fiction. Though the least typical of the author’s novels, A Tale of Two Cities still underscores many of his enduring themes—imprisonment, injustice, social anarchy, resurrection, and the renunciation that fosters renewal.`,
@@ -29,7 +29,7 @@ const details = [
         title: 'The Little Prince',
         originalTitle: 'Le Petit Prince',
         cover: "img/the liitle prince.jpg",
-        price: 'Rs. 299',
+        price: 'Rs.299',
         author: 'Antoine de Saint-Exupéry',
         genre: `Children's Literature, Philosophical Fiction`,
         intro: `A pilot stranded in the desert awakes one morning to see, standing before him, the most extraordinary little fellow. "Please," asks the stranger, "draw me a sheep." And the pilot realizes that when life's events are too difficult to understand, there is no choice but to succumb to their mysteries. He pulls out pencil and paper... And thus begins this wise and enchanting fable that, in teaching the secret of what is really important in life, has changed forever the world for its readers.
@@ -43,7 +43,7 @@ const details = [
         title: 'The Hobbit',
         originalTitle: 'The Hobbit',
         cover: "img/The Hobbit.jpg",
-        price: 'Rs. 999',
+        price: 'Rs.999',
         author: 'J.R.R. Tolkien',
         genre: 'Fantasy',
         intro: `In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.
@@ -56,7 +56,7 @@ const details = [
         title: 'And Then There Were None',
         originalTitle: 'Ten Little Niggers',
         cover: "img/And Then There Were None.jpg",
-        price: 'Rs. 799',
+        price: 'Rs.799',
         author: 'Agatha Christie',
         genre: 'Mystery/Thriller',
         intro: `First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate. For each has been marked for murder. A famous nursery rhyme is framed and hung in every room of the mansion:
@@ -72,7 +72,7 @@ const details = [
         title: 'The Alchemist',
         originalTitle: 'Alquimista',
         cover: "img/The Alchemist.jpg",
-        price: 'Rs. 299',
+        price: 'Rs.299',
         author: 'Paulo Coelho',
         genre: 'Adventure, Fiction, Philosophical',
         intro: `Combining magic, mysticism, wisdom, and wonder into an inspiring tale of self-discovery, The Alchemist has become a modern classic, selling millions of copies around the world and transforming the lives of countless readers across generations.

@@ -8,9 +8,9 @@ if(book){
     detailsDiv.innerHTML = `
         <div class = "popular-cover-container">
             <img src="${book.cover}">
-            <button>Read Now</button>
-            <button>Buy Now</button>
-            <p id="price">${book.price}</p>
+            <button>Read Now @Rs.89</button>
+            <button>Buy Now @${book.price}</button>
+            
         </div>
         <div class="popular-details-container">
             <h1>${book.title}</h1>
@@ -20,7 +20,7 @@ if(book){
             <span>${book.pages} pages</span>
             <h3>Extra details</h3>
             <p id="original_t"><b>Original title: </b>${book.originalTitle}</p>
-            <span>First published in ${book.published}</span>
+            <p id="published_year"><b>First published: </b> ${book.published}</p>
             <p id="awards"><b>Literary awards: </b>${book.awards}</p>
         </div>`
 }
