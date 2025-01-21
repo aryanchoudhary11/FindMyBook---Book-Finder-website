@@ -23,6 +23,11 @@ function openResultsPage(books) {
   window.open('genre.html', '_blank');
 }
 
+function navigateToAnotherPage(book_id){
+  console.log(book_id);
+  
+}
+
 function displayBooksOnNewPage() {
   const books = JSON.parse(localStorage.getItem('bookResults'));
 
@@ -34,14 +39,17 @@ function displayBooksOnNewPage() {
   const resultsDiv = document.getElementById('book-results');
   resultsDiv.innerHTML = '';
 
+  console.log(books)
+
   books.forEach((book) => {
+
     const coverImage = book.cover_id
       ? `https://covers.openlibrary.org/b/id/${book.cover_id}-M.jpg`
       : 'https://via.placeholder.com/100x150?text=No+Image';
 
     const firstAuthor = book.authors && book.authors[0] ? book.authors[0].name : 'N/A';
     const bookElement = `
-      <div class="genre-book">
+      <div class="genre-book" onClick="navigateToAnotherPage('${book.key}')">
         <img src="${coverImage}" alt="${book.title}" />
         <h3>${book.title}</h4>
         <p>Author: ${firstAuthor}</p>
@@ -51,6 +59,8 @@ function displayBooksOnNewPage() {
     resultsDiv.innerHTML += bookElement;
   });
 }
+
+
 
 // Call displayBooksOnNewPage on the new page
 if (document.getElementById('book-results')) {

@@ -12,6 +12,7 @@ document.body.appendChild(popupOverlay);
 contactLink.addEventListener('click', (e) => {
   e.preventDefault();
   popupOverlay.classList.add('active');
+  formContainer.style.visibility = 'visible';
 });
 
 

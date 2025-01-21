@@ -3,9 +3,10 @@ async function fetchBooksByTitle(titleName) {
     const resultsDiv = document.getElementById("book-results");
     resultsDiv.innerHTML = ""; 
 
+    console.log(titleName);
     try {
         const response = await fetch(
-            `https://openlibrary.org/search.json?title=${encodeURIComponent(titleName)}`
+            `https://openlibrary.org/search.json?title=${(titleName)}`
         );
         const data = await response.json();
 

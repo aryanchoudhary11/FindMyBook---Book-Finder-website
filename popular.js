@@ -2,6 +2,7 @@ const details = [
     {
         title: 'Don Quixote',
         originalTitle: 'El ingenioso hidalgo don Quijote de la Mancha',
+        cover: "img/Don Quixote.jpg",
         price: 'Rs. 1199',
         author: 'Miguel de Cervantes',
         genre: 'Novel (Spanish Literature)',
@@ -15,6 +16,7 @@ const details = [
     {
         title: 'A Tale of Two Cities',
         originalTitle: 'A Tale of Two Cities',
+        cover: "img/A Tale of Two Cities.jpg",
         price: 'Rs. 799',
         author: 'Charles Dickens',
         genre: 'Historical Fiction',
@@ -26,6 +28,7 @@ const details = [
     {
         title: 'The Little Prince',
         originalTitle: 'Le Petit Prince',
+        cover: "img/the liitle prince.jpg",
         price: 'Rs. 299',
         author: 'Antoine de Saint-Exupéry',
         genre: `Children's Literature, Philosophical Fiction`,
@@ -39,6 +42,7 @@ const details = [
     {
         title: 'The Hobbit',
         originalTitle: 'The Hobbit',
+        cover: "img/The Hobbit.jpg",
         price: 'Rs. 999',
         author: 'J.R.R. Tolkien',
         genre: 'Fantasy',
@@ -51,6 +55,7 @@ const details = [
     {
         title: 'And Then There Were None',
         originalTitle: 'Ten Little Niggers',
+        cover: "img/And Then There Were None.jpg",
         price: 'Rs. 799',
         author: 'Agatha Christie',
         genre: 'Mystery/Thriller',
@@ -66,6 +71,7 @@ const details = [
     {
         title: 'The Alchemist',
         originalTitle: 'Alquimista',
+        cover: "img/The Alchemist.jpg",
         price: 'Rs. 299',
         author: 'Paulo Coelho',
         genre: 'Adventure, Fiction, Philosophical',
