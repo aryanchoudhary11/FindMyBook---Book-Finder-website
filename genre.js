@@ -60,9 +60,13 @@ function displayBooksOnNewPage() {
   });
 }
 
-
-
-// Call displayBooksOnNewPage on the new page
 if (document.getElementById('book-results')) {
   displayBooksOnNewPage();
 }
+
+window.addEventListener('load', function () {
+  const loadingScreen = document.getElementById('loading');
+  const content = document.getElementById('book-results');
+  loadingScreen.style.display = 'none';
+  content.style.display = 'grid';
+});
