@@ -120,10 +120,12 @@
   .tagline-container h1{
     font-size: 45px;
     font-family: 'Permanent Marker';
+    text-align: center;
   }
   .tagline-container p{
     font-size: 20px;
     font-family: 'Edu AU VIC WA NT Pre';
+    text-align: center;
   }
   .tagline-container button{
     margin-top: 50px;
@@ -236,6 +238,7 @@
     color: rgb(207, 7, 7);
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .genres-box span{
     overflow-y: hidden;
@@ -835,3 +838,186 @@
   .popular-details-container #published_year, .popular-details-container #awards{
     font-family: 'Signika Negative';
   }
+
+
+
+
+
+
+  /*Responsivness*/
+
+  @media (max-width: 1225px){
+    
+    .footer-content-1 #important-links{
+      width: 530px;
+    }
+    .footer-content-1 a{
+      font-size: 17px;
+    }
+    .social-media {
+      width: 150px;
+    }
+    .social-media h1{
+      font-size: 23px;
+    }
+    .subscribe h2{
+      font-size: 23px;
+    }
+    .subscribe-input input{
+      height: 9px;
+      width: 180px;
+    }
+    .subscribe-input button{
+      width: 80px;
+      height: 33px;
+    }
+  }
+  @media (max-width: 1155px){
+    .footer-content-1 .copyright{
+      font-size: 10px;
+      margin-top: 13px;
+    }
+    .footer-content-1 #important-links{
+      width: 500px;
+    }
+    .footer-content-1 a{
+      font-size: 16px;
+    }
+    .social-media {
+      width: 130px;
+    }
+    .social-media h1{
+      font-size: 21px;
+    }
+    .icons-container{
+      width: 100px;
+    }
+    .icons-container img{
+      height: 23px;
+    }
+    .subscribe h2{
+      font-size: 21px;
+    }
+    .subscribe-input input{
+      height: 9px;
+      width: 160px;
+    }
+    .subscribe-input button{
+      width: 70px;
+      height: 33px;
+    }
+  }
+  @media (max-width: 1043px){
+    .footer-content-1 .copyright{
+      font-size: 9px;
+      margin-top: 12px;
+    }
+    .footer-content-1 #important-links{
+      width: 450px;
+      margin-right: 70px;
+    }
+    .footer-content-1 a{
+      font-size: 15px;
+    }
+    .social-media {
+      width: 130px;
+    }
+  }
+  @media (max-width: 924px){
+    .footer-content-1 #important-links{
+      width: 410px;
+      margin-right: 90px;
+    }
+    .footer-content-1 a{
+      font-size: 14px;
+    }
+    .social-media {
+      width: 110px;
+    }
+    .social-media h1{
+      font-size: 19px;
+    }
+    .icons-container{
+      width: 90px;
+    }
+    .icons-container img{
+      height: 21px;
+    }
+    .subscribe h2{
+      font-size: 19px;
+    }
+    .subscribe-input input{
+      height: 8px;
+      width: 140px;
+    }
+    .subscribe-input button{
+      width: 70px;
+      height: 32px;
+    }
+  }
+  @media (max-width: 846px){
+    .footer-content-1 #important-links{
+      width: 390px;
+      margin-right: 90px;
+    }
+    .footer-content-1 a{
+      font-size: 13px;
+    }
+    .social-media {
+      width: 100px;
+    }
+    .social-media h1{
+      font-size: 18px;
+    }
+    .icons-container{
+      width: 80px;
+    }
+    .icons-container img{
+      height: 20px;
+    }
+    .subscribe h2{
+      font-size: 18px;
+    }
+    .subscribe-input input{
+      height: 7px;
+      width: 120px;
+    }
+    .subscribe-input button{
+      width: 60px;
+      height: 31px;
+    }
+  }
+  @media (max-width: 791px) {
+    .footer-content {
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto auto;
+      gap: 20px;
+    }
+  
+    .footer-content-1 {
+      order: 1; 
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .social-media, .subscribe {
+      order: 2; 
+      text-align: center; 
+      flex: 1;
+    }
+  
+    .footer-content-1 #important-links {
+      flex-direction: row; 
+      justify-content: center; 
+      gap: 10px; 
+      flex-wrap: wrap; 
+      width: auto; 
+      margin-right: 0;
+    }
+  
+    .footer-content-1 a {
+      font-size: 18px ;
+      margin: 10px;
+    }
+  }
+  
