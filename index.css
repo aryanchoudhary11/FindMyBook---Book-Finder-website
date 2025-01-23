@@ -646,22 +646,36 @@
     margin-top: 15px;
     color: rgb(17, 180, 17);
   }
-  .genre-book a{
+  .genre-book #buttons{
     margin-top: 22px;
-    color: rgb(207, 7, 7);
     display: flex;
-    align-items: center;
-    text-decoration: none;
+    gap: 16px;
   }
-  .genre-book a:hover{
-    color: rgb(249, 9, 9);
+  .genre-book #buttons button{ 
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+  }
+  .genre-book #buttons button:hover{
+    background-color: rgb(207, 7, 7);
+    color: white;
   }
 
 
   /*Search by Author*/
+  #author-book-results{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 4rem;
+    margin-top: 50px;
+    padding: 24px;
 
+  }
   .author-book{
-    height: 450px;
+    height: 490px;
     width: 314px;
     display: flex;
     align-items: center;
@@ -689,15 +703,22 @@
     
     
   }
-  .author-book a{
+  .author-book #author-buttons{
     margin-top: 22px;
-    color: rgb(207, 7, 7);
     display: flex;
-    align-items: center;
-    text-decoration: none;
+    gap: 16px;
   }
-  .author-book a:hover{
-    color: rgb(249, 9, 9);
+  .author-book #author-buttons button{ 
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+  }
+  .author-book #author-buttons button:hover{
+    background-color: rgb(207, 7, 7);
+    color: white;
   }
 
   /*Search by title*/
@@ -729,15 +750,20 @@
     margin-top: 22px;
     
   }
-  .title-book a{
-    margin-top: 22px;
-    color: rgb(207, 7, 7);
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  .title-button{
+    margin-top: 20px;
   }
-  .title-book a:hover{
-    color: rgb(249, 9, 9);
+  .title-button button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+  }
+  .title-button button:hover{
+    background-color: rgb(207, 7, 7);
+    color: white;
   }
   
 

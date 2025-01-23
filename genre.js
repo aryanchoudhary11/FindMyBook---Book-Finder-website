@@ -21,13 +21,13 @@ function openResultsPage(books) {
   window.open("genre.html", "_blank");
 }
 
-function navigateToAnotherPage(bookId) {
-  // Save the selected book ID
-  localStorage.setItem("selectedBookId", bookId);
+// function navigateToAnotherPage(bookId) {
+//   // Save the selected book ID
+//   localStorage.setItem("selectedBookId", bookId);
 
-  // Open the new page
-  window.open("genre-book.html", "_blank");
-}
+//   // Open the new page
+//   window.open("genre-book.html", "_blank");
+// }
 
 function displayBooksOnNewPage() {
   const books = JSON.parse(localStorage.getItem("bookResults"));
@@ -48,11 +48,14 @@ function displayBooksOnNewPage() {
     const firstAuthor =
       book.authors && book.authors[0] ? book.authors[0].name : "N/A";
     const bookElement = `
-      <div class="genre-book" onClick="navigateToAnotherPage('${book.key}')">
+      <div class="genre-book">
         <img src="${coverImage}" alt="${book.title}" />
         <h3>${book.title}</h4>
         <p>Author: ${firstAuthor}</p>
-        <a href="#">See Details <span class="material-symbols-outlined">chevron_right</span></a>
+        <div id="buttons">
+          <button>Read Now</button>
+          <button>Buy Now</button>
+        </div>
       </div>
     `;
     resultsDiv.innerHTML += bookElement;
