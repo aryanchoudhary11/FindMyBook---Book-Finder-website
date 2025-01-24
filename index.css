@@ -352,7 +352,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    width: 100%;
   }
   .footer-content-1 a{
     font-size: 18px;
