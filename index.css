@@ -336,15 +336,8 @@
     padding: 40px;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: space-between; */
   }
-  .footer-content-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-content-1 .copyright{
+  .footer-content .copyright{
     margin-top: 15px;
     font-size: 12px;
   }
@@ -455,6 +448,10 @@
     background-color: rgb(249, 9, 9);
   }
 
+  .footer-content-2{
+    display: flex;
+    justify-content: space-between;
+  }
   .social-media h1{
     font-family: 'Roboto';
     font-size: 25px;
