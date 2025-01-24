@@ -332,15 +332,16 @@
     background-color: rgb(249, 9, 9);
   }
   
+  .footer-container{
+    background-color: #f3f3f7;
+  }
   .footer-content{
     padding: 40px;
     display: flex;
     flex-direction: column;
+
   }
-  .footer-content .copyright{
-    margin-top: 15px;
-    font-size: 12px;
-  }
+  
   .footer-content-1 #important-links{
     margin-top: 10px;
     display: flex;
@@ -451,6 +452,7 @@
   .footer-content-2{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
   }
   .social-media h1{
     font-family: 'Roboto';
@@ -488,6 +490,12 @@
   }
   .subscribe-input button:hover{
     background-color: rgb(249, 9, 9);
+  }
+
+  .copyright{
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
   }
 
 
