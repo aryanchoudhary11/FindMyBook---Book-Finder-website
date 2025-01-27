@@ -1012,6 +1012,34 @@
       width: 70px;
       height: 32px;
     }
+
+
+    /*About-us*/
+
+    .about-cover-container{
+      height: 50vh;
+    }
+    .about-us-1{
+      margin: 50px;
+      gap: 20px;
+    }
+    .about-us-1 img{
+      height: 400px;
+    }
+    .about-content-1 h1{
+      margin-bottom: 19px;
+      font-size: 38px;
+    }
+    .about-content-1 li{
+      font-size: 15px;
+    }
+    .about-content-1 p{
+      font-size: 15px;
+    }
+    .about-us-2 h1{
+      font-size: 37px;
+      margin-top: 40px;
+    }
   }
   @media (max-width: 846px){
 
@@ -1060,6 +1088,50 @@
     .subscribe-input button{
       width: 60px;
       height: 31px;
+    }
+
+    /*About us*/
+
+    .about-cover-container{
+      height: 45vh;
+    }
+    .about-cover-content{
+      top: 130px;
+      /* left: 100px; */
+    }
+    .about-cover-content h1{
+      font-size: 43px;
+    }
+    .about-cover-content p{
+      font-size: 14px;
+    }
+    .about-cover-content button{
+      margin-top: 27px;
+      /* height: 30px;
+      width: 100px; */
+    } 
+    .about-us-1{
+      margin: 50px;
+      gap: 18px;
+    }
+    .about-us-1 img{
+      height: 360px;
+    }
+    .about-content-1 h1{
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+    .about-content-1 li{
+      font-size: 13px;
+    }
+    .about-content-1 p{
+      line-height: 22px;
+      margin-top: 18px;
+      font-size: 13px;
+    }
+    .about-us-2 h1{
+      font-size: 32px;
+      margin-top: 40px;
     }
   }
   @media (max-width: 722px){
