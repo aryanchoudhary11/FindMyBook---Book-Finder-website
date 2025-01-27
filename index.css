@@ -541,6 +541,7 @@
     justify-content: center;
     margin: 50px;
     gap: 20px;
+    flex-wrap: wrap;
   }
   .about-content-1 h1{
     margin-bottom: 20px;
@@ -1171,6 +1172,7 @@
     .cover-image img{
       height: 350px;
     }
+
   }
   @media (max-width: 632px){
     .tagline-container h1{
