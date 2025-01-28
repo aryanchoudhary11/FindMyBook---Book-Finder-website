@@ -1329,7 +1329,7 @@
       padding: 25px;
     }
     .footer-content-1 a{
-      font-size: 10px;
+      font-size: 9px;
     }
     .social-media {
       width: 90px;
@@ -1377,6 +1377,9 @@
     }
     .about-us-1 img{
       height: 310px;
+    }
+    .about-us-2 h1{
+      font-size: 29px;
     }
   }
   
