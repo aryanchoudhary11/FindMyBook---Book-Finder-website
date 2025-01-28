@@ -1203,9 +1203,6 @@
     .cover-image img{
       height: 320px;
     }
-
-    /*About-us*/
-
     
   }
   @media (max-width: 579px){
@@ -1273,6 +1270,25 @@
       width: 50px;
       height: 31px;
       font-size: 10px;
+    }
+
+    /*About-us*/
+
+    .about-cover-container{
+      height: 40vh;
+    }
+    .about-cover-content{
+      top: 100px;
+      left: 70px;
+    }
+    .about-cover-content h1{
+      font-size: 35px;
+    }
+    .about-cover-content p{
+      font-size: 10px;
+    }
+    .about-us-1 img{
+      height: 330px;
     }
   }
   @media (max-width: 512px){
@@ -1345,6 +1361,25 @@
     }
     .copyright{
       font-size: 8px;
+    }
+
+    /*About-us*/
+
+    .about-cover-container{
+      height: 38vh;
+    }
+    .about-cover-content{
+      top: 90px;
+      left: 60px;
+    }
+    .about-cover-content h1{
+      font-size: 30px;
+    }
+    .about-cover-content p{
+      font-size: 10px;
+    }
+    .about-us-1 img{
+      height: 310px;
     }
   }
   
