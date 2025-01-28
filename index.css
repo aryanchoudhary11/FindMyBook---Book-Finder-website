@@ -1098,7 +1098,6 @@
     }
     .about-cover-content{
       top: 130px;
-      /* left: 100px; */
     }
     .about-cover-content h1{
       font-size: 43px;
@@ -1108,8 +1107,6 @@
     }
     .about-cover-content button{
       margin-top: 27px;
-      /* height: 30px;
-      width: 100px; */
     } 
     .about-us-1{
       margin: 50px;
@@ -1173,6 +1170,21 @@
       height: 350px;
     }
 
+    /*About-us*/
+    .about-cover-container{
+      height: 43vh;
+    }
+    .about-cover-content{
+      top: 110px;
+      left: 70px;
+    }
+    .about-cover-content h1{
+      font-size: 39px;
+    }
+    .about-cover-content p{
+      font-size: 11px;
+    }
+
   }
   @media (max-width: 632px){
     .tagline-container h1{
@@ -1191,6 +1203,10 @@
     .cover-image img{
       height: 320px;
     }
+
+    /*About-us*/
+
+    
   }
   @media (max-width: 579px){
 
