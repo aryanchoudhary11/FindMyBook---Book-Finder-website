@@ -540,7 +540,6 @@
     align-items: center;
     justify-content: center;
     margin: 50px;
-    gap: 20px;
     flex-wrap: wrap;
   }
   .about-content-1 h1{
@@ -1022,7 +1021,6 @@
     }
     .about-us-1{
       margin: 50px;
-      gap: 20px;
     }
     .about-us-1 img{
       height: 400px;
@@ -1110,7 +1108,6 @@
     } 
     .about-us-1{
       margin: 50px;
-      gap: 18px;
     }
     .about-us-1 img{
       height: 360px;
