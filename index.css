@@ -1182,6 +1182,29 @@
       font-size: 11px;
     }
 
+    /*Contact form*/
+
+    #form{
+      width: 450px;
+    }
+    .form-heading h1{
+      font-size: 33px;
+    }
+    .form-heading h3{
+      font-size: 17px;
+    }
+    .name-container{
+      margin-top: 39px;
+    }
+    .first-name, .last-name {
+      width: 250px;
+    }
+    .email-container, .phone-container{
+      width: 455px;
+    }
+    #send-btn{
+      width: 455px;
+    }
   }
   @media (max-width: 632px){
     .tagline-container h1{
@@ -1287,7 +1310,42 @@
     .about-us-1 img{
       height: 330px;
     }
+
+    /*Contact form*/
+
+    #form{
+      width: 400px;
+    }
+    .form-heading h1{
+      font-size: 30px;
+    }
+    .form-heading h3{
+      font-size: 15px;
+    }
+    .name-container{
+      margin-top: 33px;
+    }
+    .first-name, .last-name {
+      width: 200px;
+    }
+    .first-name input {
+      width: 140px;
+    }
+    .last-name input{
+      width: 192px;
+    }
+    .first-name input, .last-name input, .email-container input, .phone-container input{
+      font-size: 15px;
+    }
+    .email-container, .phone-container{
+      width: 400px;
+    }
+    #send-btn{
+      width: 400px;
+    }
   }
+
+  
   @media (max-width: 512px){
 
     .logo-container {
@@ -1380,6 +1438,44 @@
     }
     .about-us-2 h1{
       font-size: 29px;
+    }
+
+    /*Contact form*/
+
+    #form{
+      width: 350px;
+    }
+    .form-heading h1{
+      font-size: 25px;
+    }
+    .form-heading h3{
+      font-size: 12px;
+    }
+    .name-container{
+      margin-top: 27px;
+    }
+    .first-name, .last-name {
+      width: 175px;
+    }
+    .first-name input {
+      width: 133px;
+    }
+    .last-name input{
+      width: 166px;
+    }
+    .first-name input, .last-name input, .email-container input, .phone-container input{
+      font-size: 14px;
+      margin-left: 3px;
+    }
+    .email-container, .phone-container{
+      width: 355px;
+      margin-top: 9px;
+    }
+    #send-btn{
+      width: 355px;
+      margin-top: 18px;
+      height: 38px;
+      font-size: 17px;
     }
   }
   
